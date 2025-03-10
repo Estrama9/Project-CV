@@ -48,7 +48,8 @@ input, label {
 .flex-container {
     display: flex;
     background-color: white;
-    width: 75%;
+    width: 55%;
+    height: 800px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -79,7 +80,19 @@ input, label {
     background-color: #f2f2f2;
 }
 
+.profil::before, .contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -10px;
+    background-color: #4b79a3;
+}
+
 .profil, .contact {
+    position: relative;
     width: 90%;
     margin: auto;
     margin-top: 10px;
@@ -90,19 +103,45 @@ input, label {
 
 .reseaux {
     display: flex;
+    justify-content: space-around;
+}
+
+.btn-reseaux {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #4b79a3;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.titre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: 33px;
+    background-color: #4b79a3;;
+}
+
+.titre {
+    width: 100%;
+    position: relative;
 }
 
 .main-container {
-    display: flex;
+    /* display: flex; */
     flex: 2;
-    flex-direction: column;
+    /* flex-direction: column; */
     background-color: white;
 }
 
 .inside-container2 {
-    width: 90%;
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     margin: auto;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
@@ -112,6 +151,7 @@ input, label {
     box-shadow: 0px 1px 1px 0px #f4f4f4;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .competences {
@@ -122,10 +162,15 @@ input, label {
     border-radius: 15px 15px 15px 15px;
 }
 
-
 h2 {
     margin: 10px;
-    text-decoration: underline;
+    color: #4b79a3;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #4b79a3 
 }
 
 img {
@@ -192,11 +237,12 @@ img {
         max-height: 0px;
         padding: 0px;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.1s ease-in-out;
     }
 
     #menu-toggle:checked ~ .nav-bar {
         max-height: 300px;
+        padding: 15px;
     }
 
 }
