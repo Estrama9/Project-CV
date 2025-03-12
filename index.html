@@ -12,8 +12,9 @@
             <h1>Carlos RODRIGUES</h1>
             <p>Développeur Web & Mobile</p>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-btn" aria-label="Menu">☰</label>
+        <button class="menu-btn">☰</button>
+        <!-- <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn" aria-label="Menu">☰</label> -->
         <nav class="nav-bar" aria-label="Navigation principale">
             <ul class="nav-list">
                 <li><a href="" aria-label="Profil">Profil</a></li>
@@ -22,11 +23,12 @@
                 <li><a href="" aria-label="Compétences">Compétences</a></li>
                 <li><a href="" aria-label="Contact">Contact</a></li>
             </ul>
+            <ul class="nav-list-button">
+                <li><button id="dark">Mode Sombre</button></li>
+                <li><button id="light">Mode Éclairé</button></li>
+            </ul>
         </nav>
-        <div class="menu-accessible">
-            <button id="dark">Mode Sombre</button>
-            <button id="light">Mode Éclairé</button>
-        </div>
+        <!-- <div class="menu-accessible"></div> -->
     </header>
     <div class="flex-container">
         <aside class="aside-container">

@@ -46,6 +46,8 @@ input {
 }
 
 .nav-bar {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--nav-bg);
     height: max-content;
     padding: 10px;
@@ -69,9 +71,17 @@ input {
     text-decoration: underline;
 }
 
-.menu-accessible {
-    text-align: center;
+.nav-list-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 5px;
+    list-style-type: none;
 }
+
+/* .menu-accessible {
+    text-align: center;
+} */
 
 .flex-container {
     display: flex;
@@ -163,7 +173,6 @@ input {
 }
 
 .main {
-    box-shadow: 0px 1px 1px 0px var(--shadow-color);
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -175,7 +184,6 @@ input {
 ul.skills > li {
     margin: 10px;
     padding: 5px;
-    margin: 5px;
     border: 2px solid var(--primary-color);
     border-radius: 15px;
     background-color: var(--bg-light);
@@ -247,6 +255,7 @@ footer {
     }
 
     .menu-btn {
+        width: 100%;
         font-size: 1.5rem;
         padding: 10px;
         cursor: pointer;
@@ -256,20 +265,20 @@ footer {
         color: var(--bg-light);
     }
 
-    .input, label {
+    /* .input, label {
         display: block;
         text-align: center;
         background-color: var(--nav-bg);
         color: var(--bg-light);
-    }
+    } */
 
     .profil h1, .contact h1 {
         background-color: var(--bg-light);
     }
 
-    #menu-toggle {
+    /* #menu-toggle {
         display: none
-    }
+    } */
 
 
     .nav-bar {
@@ -278,9 +287,15 @@ footer {
         transition: max-height 0.1s ease-in-out;
     }
 
-    #menu-toggle:checked ~ .nav-bar {
-        display: block;
+    .nav-list-button {
+        justify-content: center;
+        margin-right: 0px;
+        margin: 25px 0;
     }
+
+    /* #menu-toggle:checked ~ .nav-bar {
+        display: block;
+    } */
 
     h2 {
         margin: auto;
