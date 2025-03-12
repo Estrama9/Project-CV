@@ -4,83 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>CV Carlos RODRIGUES</title>
 </head>
 <body>
     <header>
         <div class="head">
-            <h1>Carlos Rodrigues</h1><br>
+            <h1>Carlos RODRIGUES</h1>
             <p>Développeur Web & Mobile</p>
         </div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-btn">☰</label>
-        <nav class="nav-bar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn" aria-label="Menu">☰</label>
+        <nav class="nav-bar" aria-label="Navigation principale">
             <ul class="nav-list">
-            <li><a href="">Profil</a></li>
-            <li><a href="">Éxpérience</a></li>
-            <li><a href="">Formation</a></li>
-            <li><a href="">Compétence</a></li>
-            <li><a href="">Contact</a></li>
+                <li><a href="" aria-label="Profil">Profil</a></li>
+                <li><a href="" aria-label="Expérience">Expérience</a></li>
+                <li><a href="" aria-label="Formation">Formation</a></li>
+                <li><a href="" aria-label="Compétences">Compétences</a></li>
+                <li><a href="" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="menu-accessible">
+            <button id="dark">Mode Sombre</button>
+            <button id="light">Mode Éclairé</button>
+        </div>
     </header>
-    <div class="set-container">
-        <div class="flex-container">
-            <div class="aside-container">
-                <div class="inside-container">
+    <div class="flex-container">
+        <aside class="aside-container">
+            <div class="inside-container">
                 <h2>Profil</h2>
                 <div class="profil">
-                    <img src="/Users/carlosdev/Documents/photo-reseaux.jpg" alt="">
-                    <p>Développeur web passionné avec trois ans d'expérience, est spécialisé en HTML, CSS, JavaScript, Angular et Symfony. Je conçoit des interfaces intuitives et développe des solutions backend performantes en respectant les bonnes pratiques. </p>
+                    <img src="/Users/carlosdev/Documents/photo-reseaux.jpg" alt="Photo de Carlos Rodrigues">
+                    <p>Développeur web passionné avec 6 ans d'expérience, est spécialisé en HTML, CSS, JavaScript, Angular et Symfony. Je conçoit des interfaces intuitives et développe des solutions backend performantes en respectant les bonnes pratiques. </p>
                 </div>
                 <h2>Contact</h2>
                 <div class="contact">
                     <p>Email: cfrodrigues9@gmail.com</p>
-                    <br>
                     <p>Téléphone: +33 75 82 45 409 </p>
-                    <br>
                     <p>Adresse: 17 Avenue de Liége - 94210 Saint Maur des Fossés</p>
-                    <br>
                     <div class="reseaux">
                         <p class="btn-reseaux">GitHUB</p>
                         <p class="btn-reseaux">X</p>
                         <p class="btn-reseaux">LinkedIN</p>
-                    </div>
-                    
-                </div>
+                    </div>  
                 </div>
             </div>
-            <div class="main-container">
-                <div class="inside-container2">
-                    <h2 class="titre">Éxperience Professionnelle</h2>
-                    <div class="main">
-                        <h4>Développeur WEB</h4>
-                        <h6>Janvier 2021 - Présent</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga sint culpa blanditiis fugit expedita in commodi dolor, dignissimos odit quaerat dolore pariatur delectus quae ratione? Assumenda rerum sed dignissimos!Lorem ipsum dolor sit amet consectetur</p>
-                        <h4>Développeur Full-Stack</h4>
-                        <h6>Janvier 2018 - Janvier 2021</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga sint culpa blanditiis fugit expedita in commodi dolor, dignissimos odit quaerat dolore pariatur delectus quae ratione? Assumenda rerum sed dignissimos!Lorem ipsum dolor sit amet consectetur
-                    </div>
-                    <h2 class="titre">Formation</h2>
-                    <div class="main">
-                        <h4>Donkey School</h4>
-                        <h6>Janvier 2015 - Janvier 2018</h6>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ea quibusdam, aliquid aut veritatis asperiores quasi. Amet itaque in dolores blanditiis, ipsa iste corrupti eum fugiat veniam voluptatum distinctio magnam.Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                    <h2 class="titre">Compétences</h2>
-                    <div class="main">
-                        <p class="competences">Fontend: HTML, CSS, JavaScript</p>
-                        <p class="competences">Frameworks: React, Angular, Vue.js</p>
-                        <p class="competences">Backend: Node.js, Express, PHP</p>
-                        <p class="competences">Mobile: Flutter, React Mobile</p>
-                        <p class="competences">Base de Donnés: MySQL, MongoDB</p>
-                        <p class="competences">Outils: Git, Docker, Kubernettes </p>
-                        <p class="competences">Design UX/UI</p>
-                    </div>
-                </div>  
-            </div>    
-        </div>
+        </aside>
+        <main class="main-container">
+            <section class="main-content">
+                <h2 class="title">Éxperience Professionnelle</h2>
+                <div class="main">
+                    <h4>Développeur WEB</h4>
+                    <h6>Janvier 2021 - Présent</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga sint culpa blanditiis fugit expedita in commodi dolor, dignissimos odit quaerat dolore pariatur delectus quae ratione? Assumenda rerum sed dignissimos!Lorem ipsum dolor sit amet consectetur</p>
+                    <h4>Développeur Full-Stack</h4>
+                    <h6>Janvier 2018 - Janvier 2021</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga sint culpa blanditiis fugit expedita in commodi dolor, dignissimos odit quaerat dolore pariatur delectus quae ratione? Assumenda rerum sed dignissimos!Lorem ipsum dolor sit amet consectetur
+                </div>
+                <h2 class="title">Formation</h2>
+                <div class="main">
+                    <h4>Donkey School</h4>
+                    <h6>Janvier 2015 - Janvier 2018</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ea quibusdam, aliquid aut veritatis asperiores quasi. Amet itaque in dolores blanditiis, ipsa iste corrupti eum fugiat veniam voluptatum distinctio magnam.Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <h2 class="title">Compétences</h2>
+                <div class="main">
+                    <ul class="skills">
+                        <li>Fontend: HTML, CSS, JavaScript</li>
+                        <li>Frameworks: React, Angular, Vue.js</li>
+                        <li>Backend: Node.js, Express, PHP</li>
+                        <li>Mobile: Flutter, React Native</li>
+                        <li>Base de Données: MySQL, MongoDB</li>
+                        <li>Outils: Git, Docker, Kubernetes</li>
+                        <li>Design UX/UI</li>
+                    </ul>
+                </div>
+            </section>  
+        </main>    
     </div>
-    <footer>©2024 Carlos Rodrigues - Tous droits réserver</footer>
+    <footer>©2024 Carlos Rodrigues - Tous droits réservés</footer>
+    <script src="action.js"></script>
 </body>
 </html>

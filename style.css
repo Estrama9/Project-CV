@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #4b79a3;
+    --secondary-color: #293f54;
+    --bg-light: #f2f2f2;
+    --nav-bg: #333333;
+    --shadow-color: #f4f4f4;
+    --text-size: 1rem
+}
+
 body {
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 .head {
@@ -14,19 +23,30 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background: linear-gradient(45deg, #4c77a1, #293f54);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     height: 130px;
 }
 
-input, label {
+/* input, label {
+    display: none;
+} */
+
+input {
     display: none;
 }
 
+.menu-btn {
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    background-color: var(--nav-bg);
+    color: var(--bg-light);
+}
+
 .nav-bar {
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
-    background-color: #333333;
+    background-color: var(--nav-bg);
     height: max-content;
     padding: 10px;
 }
@@ -40,44 +60,40 @@ input, label {
 
 .nav-list a {
     text-decoration: none;
-    color: white;
-    padding: auto;
-    font-size: small;
+    color: var(--bg-light);
+    font-size: var(--text-size)
+}
+
+.nav-list a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.menu-accessible {
+    text-align: center;
 }
 
 .flex-container {
     display: flex;
-    background-color: white;
+    background-color: var(--primary-color);
     width: 55%;
-    /* height: 800px; */
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .aside-container {
-    /* display: flex; */
     flex: 1;
     min-width: 250px;
-    /* flex-direction: column;
-    align-items: center; */
-    /* width: 50%;
-    margin: auto; */
-    /* margin-top: 0;
-    height: 800px; */
 }
 
 .inside-container {
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* height: 800px; */
     margin: auto;
     margin-top: 10px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-    font-size: 14px;
-    background-color: #f2f2f2;
+    background-color: var(--bg-light);
 }
 
 .profil::before, .contact::before {
@@ -88,7 +104,7 @@ input, label {
     width: 100%;
     height: 2px;
     margin-top: -10px;
-    background-color: #4b79a3;
+    background-color: var(--primary-color);
 }
 
 .profil, .contact {
@@ -98,7 +114,7 @@ input, label {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: white;
+    background-color: var(--bg-light);
 }
 
 .reseaux {
@@ -110,11 +126,11 @@ input, label {
     padding: 5px;
     margin: 5px;
     color: #4b79a3;
-    border: 2px solid #4b79a3;
-    border-radius: 5px 5px 5px 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
 }
 
-.titre::before {
+.title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -122,22 +138,20 @@ input, label {
     width: 100%;
     height: 2px;
     margin-top: 33px;
-    background-color: #4b79a3;
+    background-color: var(--primary-color);
 }
 
-.titre {
+.title {
     width: 100%;
     position: relative;
 }
 
 .main-container {
-    /* display: flex; */
     flex: 2;
-    /* flex-direction: column; */
-    background-color: white;
+    background-color: var(--bg-light);
 }
 
-.inside-container2 {
+.main-content {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -145,38 +159,42 @@ input, label {
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: var(--bg-light);
 }
 
 .main {
-    box-shadow: 0px 1px 1px 0px #f4f4f4;
-    /* display: flex;
-    flex-wrap: wrap; */
+    box-shadow: 0px 1px 1px 0px var(--shadow-color);
     margin-bottom: 30px;
     margin-top: 10px;
 }
 
-.competences {
-    background-color: gray;
+.skills {
+    list-style: none;
+}
+
+ul.skills > li {
+    margin: 10px;
     padding: 5px;
     margin: 5px;
-    border: 1px solid gray;
-    border-radius: 15px 15px 15px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--bg-light);
 }
 
 p {
     margin-bottom: 10px;
+    font-size: var(--text-size);
 }
 
 h2 {
     margin: 10px;
-    color: #4b79a3;
+    color: var(--primary-color);
 }
 
 h4 {
     margin-top: 15px;
     margin-bottom: 10px;
-    color: #4b79a3 
+    color: var(--primary-color) 
 }
 
 img {
@@ -184,29 +202,23 @@ img {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100px;
-    height: 100px;
-    object-fit: fill; /* Ensures the image fills the circle */
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 50%;
-    resize: both;
-    border: 1px solid black;
+    border: 2px solid var(--primary-color);
 }
 
 footer {
     text-align: center;
     align-content: center;
-    background-color: #333333;
-    color: white;
-    height: max-content;
+    background-color: var(--nav-bg);
+    color: var(--bg-light);
     height: 30px;
 }
 
 
-
 @media screen and (max-width: 1050px) {
-    /* .nav-bar {
-        flex-direction: column;
-    } */
+    
     .nav-list {
         flex-direction: column;
         align-items: center;
@@ -214,7 +226,7 @@ footer {
     }
 
     .aside-container {
-        background-color: white;
+        background-color: var(--bg-light);
     }
 
     .inside-container {
@@ -225,7 +237,7 @@ footer {
     .flex-container {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--bg-light);
         width: 80%;
         margin: auto;
         margin-top: 10px;
@@ -234,31 +246,40 @@ footer {
         gap: 40px;
     }
 
+    .menu-btn {
+        font-size: 1.5rem;
+        padding: 10px;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        background-color: var(--nav-bg);
+        color: var(--bg-light);
+    }
+
     .input, label {
         display: block;
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: var(--nav-bg);
+        color: var(--bg-light);
     }
 
     .profil h1, .contact h1 {
-        background-color: white;
+        background-color: var(--bg-light);
     }
 
     #menu-toggle {
         display: none
     }
 
+
     .nav-bar {
-        max-height: 0px;
-        padding: 0px;
+        display: none;
         overflow: hidden;
         transition: max-height 0.1s ease-in-out;
     }
 
     #menu-toggle:checked ~ .nav-bar {
-        max-height: 300px;
-        padding: 15px;
+        display: block;
     }
 
     h2 {
