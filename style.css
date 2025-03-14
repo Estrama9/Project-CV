@@ -90,7 +90,7 @@ input {
     min-width: 250px;
 }
 
-.inside-container {
+.aside-content {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -165,7 +165,7 @@ input {
     background-color: var(--bg-light);
 }
 
-.main {
+.main-paragraph {
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -249,7 +249,7 @@ footer {
         background-color: var(--bg-light);
     }
 
-    .inside-container {
+    .aside-content {
         max-width: 350px;
         min-width: 150px;
     }
