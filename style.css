@@ -27,10 +27,6 @@ body {
     height: 130px;
 }
 
-/* input, label {
-    display: none;
-} */
-
 input {
     display: none;
 }
@@ -79,10 +75,6 @@ input {
     gap: 5px;
     list-style-type: none;
 }
-
-/* .menu-accessible {
-    text-align: center;
-} */
 
 .flex-container {
     display: flex;
@@ -206,6 +198,10 @@ h4 {
     color: var(--primary-color) 
 }
 
+h6 {
+    margin: 5px 0;
+}
+
 .selfie {
     display: block;
     margin: auto;
@@ -240,7 +236,6 @@ footer {
     color: var(--bg-light);
     height: 30px;
 }
-
 
 @media screen and (max-width: 1050px) {
     
@@ -282,21 +277,9 @@ footer {
         color: var(--bg-light);
     }
 
-    /* .input, label {
-        display: block;
-        text-align: center;
-        background-color: var(--nav-bg);
-        color: var(--bg-light);
-    } */
-
     .profil h1, .contact h1 {
         background-color: var(--bg-light);
     }
-
-    /* #menu-toggle {
-        display: none
-    } */
-
 
     .nav-bar {
         display: none;
@@ -309,10 +292,6 @@ footer {
         margin-right: 0px;
         margin: 25px 0;
     }
-
-    /* #menu-toggle:checked ~ .nav-bar {
-        display: block;
-    } */
 
     h2 {
         margin: auto;
